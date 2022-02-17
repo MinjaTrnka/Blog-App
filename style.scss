@@ -1,0 +1,129 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+body {
+  @include background;
+  background-color: $backgrounColor-body;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-wrapper,
+.register-wrapper {
+  @include login-wrapper;
+  img {
+    width: 100px;
+    border-radius: 50%;
+    padding: 30px;
+  }
+  input {
+    background-color: $backgroundColor-input;
+    @include login-form;
+    &::placeholder {
+      color: $color-placeholder;
+    }
+  }
+  button {
+    @include login-button;
+    &:hover {
+      @include hover;
+    }
+  }
+  .msg-error {
+    color: $color-message-error;
+    font-size: 20px;
+    display: none;
+  }
+}
+
+.nav {
+  @include backgroundColor-wraper;
+  width: 100%;
+  display: none;
+  .logout-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  p,
+  img {
+    margin-right: 5px;
+  }
+  .tooltip {
+    @include tooltip;
+  }
+  .tooltip .tooltiptext {
+    @include tooltiptext;
+  }
+  .tooltip:hover .tooltiptext {
+    @include tooltip-hover;
+  }
+}
+
+.blog-area {
+  display: none;
+  width: 60%;
+  margin: 3% auto;
+  input {
+    @include backgroundColor-wraper;
+    border: none;
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: $box-sizing;
+    border-radius: $border-radius;
+  }
+  textarea {
+    @include backgroundColor-wraper;
+    border: none;
+    box-sizing: $box-sizing;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    border-radius: $border-radius;
+  }
+  button {
+    @include post-button;
+  }
+  .posted-blog {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+.like-dislike-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+}
+.like-dislike-icons i:hover {
+  cursor: pointer;
+  color: blue;
+}
+.profil {
+  cursor: pointer;
+}
+.profil:hover {
+  color: blue;
+}
+// .profil-wrapper {
+//   box-sizing: border-box;
+//   width: 80%;
+//   display: flex;
+//   flex-direction: row;
+//   .info {
+//     box-sizing: border-box;
+
+//     width: 30%;
+//   }
+//   .posted-blog {
+//     box-sizing: border-box;
+
+//     width: 70%;
+//   }
+// }

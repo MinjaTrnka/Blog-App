@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+    src="https://kit.fontawesome.com/3efab44196.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="style.css" />
+<body>
+<!-- <p style="display: none;" id="profi"></p> -->
+    <div class="nav" id="nav">
+        <div class="logout-block">
+        <p id="user-name"></p>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonIaaaHWdaaX1XD6FM1RUe6ZU000KDDw1gsJto7DZrGnE8rXxQ6xSmyoL6isuqlGhNeQ&usqp=CAU"
+          style="width: 50px; height: 50px; border-radius: 50%"
+        />
+        <div class="tooltip">
+          <p><i onclick="logout()" class="fas fa-sign-out-alt fa-lg"></i></p>
+          <span class="tooltiptext">Logout</span>
+        </div>
+        <div class="tooltip">
+          <p><i onclick="logout()" class="fas fa-user-plus fa-lg"></i></p>
+          <span class="tooltiptext">Register Now</span>
+        </div>
+        </div>
+    </div>
+
+   <div id="blog-area" class="blog-area">
+       <input id="blog-title" type="text" placeholder="Blog Title"><br>
+       <textarea id="blog-desc" placeholder="Blog text..."></textarea>
+       <button onclick="postBlog()">Post</button>
+       <br>
+       <hr>
+       <input onkeyup="searchBlogs(event)" type="text" placeholder="Search blogs..."><br>
+       <div id="publisbed-blogs"></div>
+   </div>
+
+
+    <div class="login-wrapper" id="login-form">
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonIaaaHWdaaX1XD6FM1RUe6ZU000KDDw1gsJto7DZrGnE8rXxQ6xSmyoL6isuqlGhNeQ&usqp=CAU" />
+        <input id="email" type="text" placeholder="Username or email" />
+        <input onkeyup="loginOnEnter(event)" id="password" type="password" placeholder="Password" />
+        <p class="msg-error">Invalid Credentials!</p>
+        <button onclick=login()>Login</button>
+        <p>Don`t have an account?<a onclick="goToSignUpForm()" href="#">Sing Up</a></p>
+        <p><a href="">Forgor Password?</a></p>
+    </div>
+
+
+
+
+
+    <div class="register-wrapper" id="singup-form" style="display: none;">
+        <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQonIaaaHWdaaX1XD6FM1RUe6ZU000KDDw1gsJto7DZrGnE8rXxQ6xSmyoL6isuqlGhNeQ&usqp=CAU" />
+        <input id="name" type="text" placeholder="Name">
+        <input id="su-email" type="text" placeholder="Email">
+        <input id="address" type="text" placeholder="Address">
+        <input id="username" type="text" placeholder="Username">
+        <input id="su-password" type="password" placeholder="Password">
+        <button onclick="registerNow()">Register Now</button>
+        <p><a onclick="goToLoginForm()" href="#">Login</a></p>
+
+    </div>
+    
+   <div id="profil-wrapper">
+     
+   </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+@mixin login-wrapper {
+  box-shadow: 10px 13px 12px 1px rgba(47, 53, 54, 0.91);
+  text-align: center;
+  @include backgroundColor-wraper;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  width: 30%;
+  margin: 5% auto;
+  padding: $padding;
+}
+
+@mixin login-form {
+  box-sizing: border-box;
+  padding: $padding;
+  border: none;
+  width: 85%;
+  margin: 5px;
+  height: 40px;
+  border-radius: $border-radius;
+  background-color: $backgroundColor-input;
+}
+@mixin login-button {
+  box-sizing: border-box;
+  padding: $padding;
+  border-radius: $border-radius;
+  width: 40%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: $backgroundColor-button;
+  font-size: 15px;
+}
+
+// @mixin backgroundColor-wraper {
+//   background: rgb(19, 41, 40);
+//   background: linear-gradient(
+//     90deg,
+//     rgba(19, 41, 40, 0.7906512946975666) 0%,
+//     rgba(43, 141, 192, 0.6253851882549895) 53%
+//   );
+// }
+
+@mixin backgroundColor-wraper {
+  background: rgb(19, 41, 40);
+  background: linear-gradient(
+    90deg,
+    rgba(19, 41, 40, 0.7906512946975666) 0%,
+    rgba(231, 235, 20, 0.6561975131849616) 59%
+  );
+}
+
+@mixin hover {
+  background-color: $hoverButton;
+  color: #fff;
+}
+
+@mixin tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+@mixin tooltiptext {
+  visibility: hidden;
+  cursor: pointer;
+  width: 60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  font-size: 12px;
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: -90%;
+}
+@mixin tooltip-hover {
+  visibility: visible;
+}
+@mixin post-button {
+  width: 80px;
+  background-color: grey;
+  color: $color-button;
+  border-radius: 10px;
+  padding: 10px;
+}
+@mixin background {
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm283-nunny-068-g.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=d90cedbeb8cd8fb15b38850442cd9d94");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

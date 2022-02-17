@@ -1,0 +1,189 @@
+body {
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm283-nunny-068-g.jpg?w=1200&h=1200&dpr=1&fit=clip&crop=default&fm=jpg&q=75&vib=3&con=3&usm=15&cs=srgb&bg=F4F4F3&ixlib=js-2.2.1&s=d90cedbeb8cd8fb15b38850442cd9d94");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #a9d1d4;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-wrapper,
+.register-wrapper {
+  box-shadow: 10px 13px 12px 1px rgba(47, 53, 54, 0.91);
+  text-align: center;
+  background: #132928;
+  background: linear-gradient(90deg, rgba(19, 41, 40, 0.7906512947) 0%, rgba(231, 235, 20, 0.6561975132) 59%);
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 30%;
+  margin: 5% auto;
+  padding: 10px;
+}
+.login-wrapper img,
+.register-wrapper img {
+  width: 100px;
+  border-radius: 50%;
+  padding: 30px;
+}
+.login-wrapper input,
+.register-wrapper input {
+  background-color: #cae6e8;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  width: 85%;
+  margin: 5px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #cae6e8;
+}
+.login-wrapper input::-moz-placeholder, .register-wrapper input::-moz-placeholder {
+  color: #4e5b5e;
+}
+.login-wrapper input:-ms-input-placeholder, .register-wrapper input:-ms-input-placeholder {
+  color: #4e5b5e;
+}
+.login-wrapper input::placeholder,
+.register-wrapper input::placeholder {
+  color: #4e5b5e;
+}
+.login-wrapper button,
+.register-wrapper button {
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #3b5961;
+  font-size: 15px;
+}
+.login-wrapper button:hover,
+.register-wrapper button:hover {
+  background-color: #445e63;
+  color: #fff;
+}
+.login-wrapper .msg-error,
+.register-wrapper .msg-error {
+  color: red;
+  font-size: 20px;
+  display: none;
+}
+
+.nav {
+  background: #132928;
+  background: linear-gradient(90deg, rgba(19, 41, 40, 0.7906512947) 0%, rgba(231, 235, 20, 0.6561975132) 59%);
+  width: 100%;
+  display: none;
+}
+.nav .logout-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.nav p,
+.nav img {
+  margin-right: 5px;
+}
+.nav .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.nav .tooltip .tooltiptext {
+  visibility: hidden;
+  cursor: pointer;
+  width: 60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  font-size: 12px;
+  position: absolute;
+  z-index: 1;
+  top: -2px;
+  left: -90%;
+}
+.nav .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.blog-area {
+  display: none;
+  width: 60%;
+  margin: 3% auto;
+}
+.blog-area input {
+  background: #132928;
+  background: linear-gradient(90deg, rgba(19, 41, 40, 0.7906512947) 0%, rgba(231, 235, 20, 0.6561975132) 59%);
+  border: none;
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.blog-area textarea {
+  background: #132928;
+  background: linear-gradient(90deg, rgba(19, 41, 40, 0.7906512947) 0%, rgba(231, 235, 20, 0.6561975132) 59%);
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  height: 200px;
+  border-radius: 10px;
+}
+.blog-area button {
+  width: 80px;
+  background-color: grey;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+.blog-area .posted-blog {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.like-dislike-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+}
+
+.like-dislike-icons i:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.profil {
+  cursor: pointer;
+}
+
+.profil:hover {
+  color: blue;
+}
+
+.profil-wrapper {
+  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.profil-wrapper .info {
+  box-sizing: border-box;
+  width: 30%;
+}
+.profil-wrapper .posted-blog {
+  box-sizing: border-box;
+  width: 70%;
+}/*# sourceMappingURL=style.css.map */
